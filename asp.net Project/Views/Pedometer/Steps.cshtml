@@ -1,0 +1,13 @@
+﻿@model StepsModel
+<div class="text-center border" style="height:500px;padding-top:150px">
+    <form  class="Form-group" asp-action="StepsToCalories" asp-controller="Pedometer" method="post">
+            <label class="col-form-label-lg">عدد الخطوات </label>
+            <div>
+                <input type="number" name="stepsNum" style="width:300px"/>
+            </div>
+        <p class="text-danger">
+            @ViewData["error"]
+        </p>
+            <button type="submit" class="btn btn-primary" style="width:150px">OK</button>
+    </form>
+</div>
